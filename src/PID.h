@@ -18,6 +18,11 @@ public:
   double Kd;
 
   /*
+  * Previous CTE
+  */
+  double prev_cte;
+
+  /*
   * Constructor
   */
   PID();
@@ -41,6 +46,7 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+
 };
 
 #endif /* PID_H */
